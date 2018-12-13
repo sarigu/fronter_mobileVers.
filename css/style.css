@@ -1,0 +1,721 @@
+* {font-family: Arial, Helvetica, sans-serif;}
+
+h1,h2, a, label, figcaption{
+    color:white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+td{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size:.8em; 
+    color: rgb(34,50,71);
+}
+
+p{color:white;}
+
+
+h2{
+    font-size:1.1em; 
+}
+
+form{
+    padding-top: 5em; 
+}
+
+
+
+/* //// Log In page //// */
+
+#bodyLogIn{background-color: rgb(34,50,71);}
+
+form{border:0;}
+
+fieldset{border:0;}
+
+#bodyLogIn h1{
+    text-align: center;
+    padding-bottom: .5em; 
+    font-size: 3em; 
+}
+
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 20px 20px;
+    margin: 11px 0;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: white; 
+    margin-bottom: 2em; 
+
+}
+
+label[for=checkbox],input[type=checkbox]{
+    display: inline-block;
+}
+
+label[for=checkbox]{
+    font-size: .9em;
+}
+
+input[type=checkbox]{
+    background-color: #eee;
+}
+
+button{
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#logInBtn{
+    background-color: rgb( 234,80,69);
+    margin-top: 1.5em; 
+    margin-left:10em; 
+    width:30%;
+    height: 56px; 
+} 
+
+#logInBtn:hover{
+    background-color: rgba(234, 77, 69, 0.801);
+}
+
+#forgotPassword{
+    display: inline-block; 
+    margin-left:17em; 
+    margin-bottom: 0; 
+    font-weight: normal;
+    font-size: .79em; 
+}
+
+
+/* //// Header//// */
+
+/*Layout*/
+
+header{
+    background-color: rgb(34,50,71); 
+    height:88px; 
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr;
+    grid-template-areas: 
+    "burgermenu logo bellIcon searchIcon"
+
+}
+
+#burgermenu{
+    color: white; 
+    font-size: 40px;
+    cursor:pointer;
+    grid-area: burgermenu; 
+    padding-left: 1em; 
+    padding-top: .3em; 
+}
+
+.logo{
+    width:100%; 
+    grid-area: logo; 
+    padding-left:2em; 
+}
+
+#search{
+    bottom: 575px;
+    padding-left: 1em; 
+    padding-top: .8em; 
+    font-size: 1.8em;
+    color: white; 
+    grid-area: searchIcon; 
+    cursor:pointer;
+}
+
+#bell{
+    bottom: 575px;
+    padding-left: 2.2em; 
+    padding-top: .8em; 
+    font-size: 1.8em;
+    color: white;  
+    grid-area: bellIcon;
+    cursor:pointer;
+}
+
+/* Side navigation */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(34,50,71);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 18px 180px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    text-align: left; 
+}
+  
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#profile{
+    width:40%; 
+    padding-top: 2em; 
+    padding-left: 6.5em; 
+}
+
+header figcaption{
+    padding-bottom: 2.5em;
+    padding-left: 11.12em;
+}
+
+
+
+/* //// Main/Landing page //// */
+
+.landingpageImages{
+    width:100%; 
+}
+
+/* Layout */
+
+#landingPageMain{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* zweite fraction ist doppelt so groß wie erste*/
+    grid-column-gap: 10px; 
+    grid-row-gap: 10px; 
+    grid-template-areas: 
+    "info-area   schedule-area"
+    "chats-area   files-area"
+}
+    
+#info{
+    grid-area: info-area;
+    margin-top: .75em; 
+}
+    
+#schedule{
+    grid-area: schedule-area;
+    margin-top: .75em; 
+}
+
+#chats{grid-area: chats-area;}
+
+#files{grid-area:files-area;}
+
+/* Styling of each boxe's elements */
+
+#info h2{
+    position: absolute;   
+    bottom: 380px;
+    right: 355px;
+}
+
+#info p{
+    position: absolute;   
+    bottom: 192px;
+    right: 290px;
+    left: 21px; 
+    font-size: 14px; 
+}
+
+#arrow1{
+    font-size: 1.8em;  
+    position: absolute; 
+    bottom: 210px;
+    right: 280px;
+}
+
+#schedule h2{
+    position: absolute;   
+    bottom: 380px;
+    right: 75px;
+}
+
+#schedule p{
+    position: absolute;   
+    bottom: 208px;
+    right: 50px;
+    left: 270px; 
+    font-size: 14px; 
+}
+
+#arrow2{
+    font-size: 1.8em;  
+    position: absolute; 
+    bottom: 210px;
+    right: 40px;
+}
+
+#chats h2{
+    position: absolute;   
+    bottom: 10px;
+    right: 340px;
+}
+
+#chats p{
+    position: absolute;   
+    bottom: -185px;
+    right: 295px;
+    left: 22px; 
+    font-size: 14px; 
+}
+
+#arrow3{
+    color: white; 
+    font-size: 1.8em;  
+    position: absolute; 
+    bottom: -165px;
+    right: 280px;
+}
+
+
+#files h2{
+    position: absolute;   
+    bottom: 10px;
+    right: 95px;
+}
+
+#files p{
+    position: absolute;   
+    bottom: -170px;
+    right: 50px;
+    left: 270px; 
+    font-size: 14px; 
+}
+
+#arrow4{
+    color: white; 
+    font-size: 1.8em;  
+    position: absolute; 
+    bottom: -165px;
+    right: 40px;
+}
+
+
+
+/* //// Chats page //// */
+
+#bodyChats{
+    background-color: rgba(142, 127, 174, 0.349); 
+}
+
+main{
+    padding-left: .4em;
+}
+
+#groupChats, #studentsChats, #staffChats{
+    background-color: rgb(142,127,174); 
+    padding: .1em;
+}
+
+.groupIcons{
+    width: 40%; 
+}
+
+.studentIcons{
+    width:36%; 
+}
+
+.linkToChat{
+    color:rgb(34,50,71);
+    text-decoration: none;
+}
+
+
+/* Group Chat Layout */
+
+.chatIcons1{
+    padding-top:1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px; 
+    grid-template-areas: 
+    "table1-area   . "
+    "table2-area   . "
+    "more-area add-area "
+}
+
+#table1{
+    grid-area: table1-area;
+}
+
+#table2{
+    grid-area: table2-area;
+    padding-right:15em; 
+}
+
+#moreImg{
+    grid-area: more-area; 
+    width:12%;   
+    padding-left: .5em; 
+    padding-bottom: .5em; 
+    cursor:pointer;
+}
+
+#more{
+    display:none; 
+}
+
+
+#add{
+    grid-area: add-area; 
+    width: 12%;
+    padding-left: 1em; 
+    padding-bottom: .5em; 
+    cursor:pointer;
+}
+
+/*Students Chat Layout*/
+
+.chatIcons2{
+    padding-top:1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px; 
+    grid-template-areas: 
+    "studentTable1-area  ."
+    "studentTable2-area   . "
+    "more-area . "
+}
+
+#studentTable1{
+    grid-area: studentTable1-area;
+    padding-right:1em; 
+}
+
+#studentTable2{
+    grid-area: studentTable2-area;
+    padding-right:16.3em; 
+}
+
+#moreImg2{
+    grid-area:more-area; 
+    width:12%;
+    padding-left: .3em; 
+    padding-bottom: .5em; 
+    cursor:pointer;
+}
+
+#more2{
+    display:none; 
+}
+
+/* Staff Chats */
+
+.staffIcons{
+    width:33%; 
+}
+
+.chatIcons3{
+    padding-top:1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 10px; 
+    grid-template-areas: 
+    "staffTable-area  ."
+}
+
+#staffTable{
+    grid-area: staffTable-area;
+    padding-right:1em; 
+}
+
+/*Pop up reminder*/
+
+#reminder{
+    background-color: rgba(142, 127, 174, 0.575); 
+    border-radius: 9px;
+    width:25%; 
+    height:80px; 
+    top: 450px; 
+    left: 350px;
+    float:right; 
+    position: fixed;
+    cursor: pointer;
+}
+
+#reminder p{
+    padding-left: 8px; 
+}
+
+.popUp{
+    opacity: 0;
+    animation: fadeIn 3s;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+
+/* //// Group Chat Page //// */
+
+#groupChatBody{
+    background-color: rgba(142, 127, 174, 0.349); 
+}
+
+#secondRow td{
+    padding-left: 1.4em; 
+    padding-bottom: .5em; 
+}
+
+#conversation img{
+    width:100%;
+    margin-top:.5em; 
+    padding: 10px;
+}
+
+#meIcon{
+    float: right; 
+    margin-bottom: 2em; 
+}
+
+#conversation td{
+    width:200px;
+}
+
+#chatText1, #chatText2{
+    width: 260px;
+    background-color: lightskyblue;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    height:55px; 
+    margin-top:1.3em; 
+    font-size: .8em;
+    font-weight: normal; 
+    text-transform: none;
+    text-align: left;
+    padding-left:.5em;
+    padding-right:.5em;
+}
+
+#members{
+    background-color: rgba(142, 127, 174, 0.582);
+    margin-bottom: 1.5em; 
+}
+
+#members img{
+    width: 60%;
+    padding: 8px; 
+}
+
+#message{
+    background-color: rgba(142, 127, 174, 0.582);
+    height:150px;
+}
+
+#message input[type=text]{
+    width:50%;
+    border-radius: 6px;
+    background-color: white;
+    padding: 30px 10px;
+    font-size: .8em; 
+    border:white; 
+}
+
+#messagefield, #plus, #sentBtn{
+    display: inline-block;
+}
+
+#addFile{
+    color:white; 
+    font-size: 2.8em; 
+    padding-left: 1em; 
+    padding-right: .7em; 
+    padding-top: .9em; 
+ }
+
+#sentBtn{
+    width:55%;
+    padding-left:2em;
+    padding-top:1em;
+    padding-top: .9em; 
+}
+
+#conversation{
+    padding-top: .5em; 
+}
+
+#conversation img{
+    width:25%;
+}
+
+#conversation figcaption{
+    padding-left:1em; 
+    color: rgb(34,50,71);
+}
+
+/* Pop up text message */
+
+.popup{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 6px;
+    padding: 8px 0;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: rgba(135, 210, 250, 0.63);
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125px;
+  left: -280px;
+  margin-right: -80px;
+  font-weight: normal;
+  font-size: .8em;
+  text-align: left;
+  padding-left:.5em; 
+}
+
+.popup .show{  
+  visibility: visible;
+  animation: fadeIn 1s
+}
+
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+/* //// Members List Page //// */
+
+#membersListBody{
+    background-color: rgb(223, 223, 223);
+}
+
+#semester1, #semester2{
+    background-color:rgb(163, 162, 162); 
+    padding: .8em;
+    color:white; 
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#studentslist1, #studentslist2{
+    width: 100%;
+    padding: 5px 0;
+    background-color: rgb(223, 223, 223);
+    margin-top: 20px;
+    padding-bottom: 2em; 
+}
+
+#studentslist1 img, #studentslist2 img{
+    width: 50%;
+    float: left;
+    padding-left:1em; 
+}
+
+
+.fa-comment{
+    color: rgb(34,50,71); 
+    font-size: 1.8em; 
+    float: left;
+    padding-right: 5em; 
+}
+
+.name{
+    padding-right: 15em; 
+    float:left; 
+    padding-top: .9em; 
+}
+
+.name2{
+    padding-right: 17em; 
+    float:left; 
+    padding-top: .9em; 
+}
+
+/* //// New Group Chat Page //// */
+
+#newGroupHeading h1, #newGroupHeading i {
+    display: inline-block;
+}
+
+.material-icons{
+    color: white; 
+    font-size: 1.8em; 
+    padding-left:.5em; 
+}
+
+#creatingGroup{
+    background-color:rgba(142, 127, 174, 0.37);
+    margin-bottom: 1.5em;
+    padding:8px; 
+    height: 104px; 
+}
+
+.newConversation{
+    height:312px; 
+}
+
+#newMessage{
+    background-color:rgba(142, 127, 174, 0.37);
+    height:150px; 
+}
+
+#newMessage input[type=text]{
+    width:50%;
+    border-radius: 6px;
+    background-color: white;
+    padding: 30px 10px;
+    font-size: .8em; 
+    border:white; 
+}
+
+#creatingGroup img{
+    width:15%; 
+    padding-top: 1em; 
+}
+
+/* //// Log Out //// */
+
+#logout{
+    padding-top: 2em; 
+}
+
+
+
+
+
+
+
