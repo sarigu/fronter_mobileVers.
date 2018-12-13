@@ -344,6 +344,12 @@ main{
     text-decoration: none;
 }
 
+#table1 a, #studentTable1 a{
+    text-transform: uppercase;
+    color: rgb(34,50,71);
+    text-decoration: none;
+}
+
 
 /* Group Chat Layout */
 
