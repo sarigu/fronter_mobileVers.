@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <title>Chats</title>
+</head>
+
+<header>
+    <a href="main.html"><img class="logo" src="images/kea_logo.png" alt="KEA logo"></a>
+    <a id="search" href="#"><i class="fa fa-search"></i></a>
+    <a id="bell" href="#"><i class="fa fa-bell"></i></a>
+    <div id="mySidenav" class="sidenav">
+        <a href="#" class="closebtn">&times;</a>
+        <img id="profile" src="images/profile_picture.png" alt="profile">
+        <figcaption>Profile</figcaption>
+        <a href="#">Info</a>
+        <a href="#">Schedule</a>
+        <a href="chats.html">Chats</a>
+        <a href="#">Files</a>
+        <a id="logout" href="login.html">Log Out</a>
+    </div>
+    <div id="burgermenu">&#9776;</div>
+</header>
+
+
+<body id="bodyChats">
+    <main>
+        <h1 id="chatsHeading">Chats</h1>
+        <div id="groupChats">
+            <h2>Group Chats</h2>
+        </div>
+        <div class="chatIcons1">
+            <table id="table1">
+                <tr>
+                    <td> <a href="groupchat.html"><img class="groupIcons" src="images/group_icon.png"></a></td>
+                    <td><a class="linkToGroup" href="groupchat.html">Fronter Group</a></td>
+                </tr>
+                <tr>
+                    <td><img class="groupIcons" src="images/group_icon.png"></td>
+                    <td>Bike Website Group</td>
+                </tr>
+                <tr>
+                    <td> <img class="groupIcons" src="images/group_icon.png"></td>
+                    <td>Animation Group</td>
+                </tr>
+            </table>              
+        </div>
+        <span id="dots"></span>
+        <div id="more">
+            <table id="table2">
+                <tr>
+                   <td> <img class="groupIcons" src="images/group_icon.png"></td>
+                   <td>Mobile Group</td>
+                </tr>
+                <tr>
+                    <td><img class="groupIcons" src="images/group_icon.png"></td>
+                    <td>Prototype Chat</td>
+                </tr>
+                <tr>
+                    <td> <img class="groupIcons" src="images/group_icon.png"></td>
+                    <td>Small Animation</td>
+                </tr>
+            </table>
+        </div>
+        <img id="moreImg" src="images/more_icon.png">
+        <a href="newGroupChat.html"><img id="add" src="images/add_group.png" alt="add group button"></a>
+
+
+
+        <div id="studentsChats">
+            <h2>Students</h2>
+        </div>
+
+        <div class="chatIcons2">
+            <table id="studentTable1">
+                <tr>
+                    <td><a href="studentchat.html"><img class="studentIcons" src="images/student_icon.png"></a></td>
+                    <td><a class="linkToGroup" href="studentchat.html">Luiza</a></td>
+                </tr>
+                <tr>
+                    <td><img class="studentIcons" src="images/student_icon.png"></td>
+                    <td>Patryk</td>
+                </tr>
+                <tr>
+                    <td><img class="studentIcons" src="images/student_icon.png"></td>
+                    <td>Eva</td>
+                </tr>
+            </table>              
+        </div>
+        <span id="dots2"></span>
+        <div id="more2">
+            <table id="studentTable2">
+                <tr>
+                    <td><img class="studentIcons" src="images/student_icon.png"></td>
+                    <td>Julia<td>
+                </tr>
+                <tr>
+                    <td><img class="studentIcons" src="images/student_icon.png"></td>
+                    <td>Simon</td>
+                </tr>
+                <tr>
+                    <td><img class="studentIcons" src="images/student_icon.png"></td>
+                    <td>Miary</td>
+                </tr>
+            </table>
+        </div>
+        <img id="moreImg2" src="images/more_icon.png">
+    
+
+        <div id="staffChats">
+            <h2>Staff</h2>
+        </div>
+
+        <div class="chatIcons3">
+                <table id="staffTable">
+                    <tr>
+                        <td><img class="staffIcons" src="images/student_icon.png"></td>
+                        <td>Kenny</td>
+                    </tr>
+                    <tr>
+                        <td><img class="staffIcons" src="images/student_icon.png"></td>
+                        <td>Gullan</td>
+                    </tr>
+                </table>              
+            </div>
+     
+        <div id="reminder">
+            <p>Click, to write someone new</p>
+        </div>
+    </main>
+    <script src="js/chats.js"></script>
+</body>
+
+</html>
